@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="netflix.png" sizes="10x10" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="vid.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="vid.js"></script>
+    <title>Netflix</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="notif_onAction">
+        <i class="fa fa-redo"></i>
+      </div>
+
+      <div class="vid_showc_holder">
+        <video id="vid_main" allowfullscreen="true" data-episode="0" autoplay>
+          <source src="COSTA RICA IN 4K 60fps HDR (ULTRA HD).mp4" type=video/mp4
+          >
+        </video>
+      </div>
+      <div class="controls">
+        <div class="prg_vid_holder">
+          <!--<input id="file" type="range" value="0" step="0.5" min="0" max="100" data-time="00:00"></input>-->
+          <div class="prg_video" data-time="00:00">
+            <div id="active_prg_bar"></div>
+            <div id="load_prg_bar"></div>
+            <div id="curTim_in"><p>00:00</p></div>
+            <span></span>
+          </div>
+        </div>
+        <div class="d_ctrl">
+          <div id="fp_ctrl">
+            <button id="b_play"><i class="fa fa-pause"></i></button>
+            <button id="b_re"><i class="fa fa-undo"></i></button>
+            <button id="b_fr"><i class="fa fa-redo"></i></button>
+
+            <button id="volume-ctrl">
+              <i class="fa fa-volume-up"></i>
+            </button>
+            <div class="vl_sld">
+              <input
+                id="vl_sld_in"
+                type="range"
+                value="0.3"
+                min="0"
+                max="1"
+                step="0.01"
+              />
+            </div>
+            <div class="ep_info">
+              <p class="e_in">
+                <span style="color:white;font-weight:600;font-size: 20px;"
+                  >Elite</span
+                >
+                S2:E2 34 hours missing
+              </p>
+            </div>
+          </div>
+          <div>
+            <button><i class="far fa-question-circle"></i></button>
+            <button id="fnext_ep"><i class="fa fa-step-forward "></i></button>
+            <button><i class="fa fa-layer-group"></i></button>
+            <button><i class="fa fa-th-list"></i></button>
+            <button id="fullScreenbtn"><i class="fas fa-expand"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="na_comp">
+      <div>
+        <h1 class="logoH">NETFLIX</h1>
+      </div>
+      <div>
+        <h4>Movie/Series</h4>
+        <h3>Watch Netflix on your phone or tablet</h3>
+        <button>
+          Get the free app
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
